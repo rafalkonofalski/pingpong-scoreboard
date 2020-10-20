@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Scoreboard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Scoreboard from './components/Scoreboard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Scoreboard
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(228, 228, 228);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex: 1;
+}
+
+.flex-col-min {
+  flex: auto;
+  max-width: 40px;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+flex-col-40pc {
+  max-width: 40%;
+}
+
+.text-center {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
